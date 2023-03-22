@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 40px;
+        background-color: skyblue;
+    }
+    p{
+        color: white;
+        padding: 15px;
+    }
+    p:hover{
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+                 <p>Home</p>
+                 <p>About</p>
+                 <p>Product</p>
+                 <p>Contact</p>
+        </nav>
+    </header>
+</body>
+</html>
