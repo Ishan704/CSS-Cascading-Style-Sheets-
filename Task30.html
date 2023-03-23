@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#flex-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item{
+    margin:5px;
+    padding: .6em .2em;
+    color:darkslategray;
+    letter-spacing: .2em;
+    font-weight: bold;
+    background-color: lightyellow;
+    border: 5px solid lightgrey;
+    border-radius: 6px;
+    box-shadow: 0 4px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s;
+    position: relative;
+    
+}
+.flex-item:focus,.flex-item:hover{
+    background-color: aqua;
+    border-color: darkolivegreen;
+}
+.flex-item:active{
+    top:3px;
+    box-shadow: 0 1px 2px darkgrey;
+}
+</style>
+</head>
+<body>
+<ul id="flex-menu">
+    <li class="flex-item">HTML</li>
+    <li class="flex-item">CSS</li>
+    <li class="flex-item">JS</li>
+    <li class="flex-item">PHP</li>
+    <li class="flex-item">WINDOWS</li>
+    <li class="flex-item">CLOUD</li>
+    <li class="flex-item">LINUX</li>
+</ul>    
+</body>
+</html>
