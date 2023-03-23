@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition-Timing Function</title>
+<style>
+    div{
+        width:100px;
+        height:100px;
+        background-color: red;
+        transition: width 3s;
+        transition:transform 2s;
+        margin:10px;
+    }
+    #one{
+        transition-timing-function: ease;
+    }
+    #two{
+        transition-timing-function: ease-in;
+      
+    }
+    #three{
+        transition-timing-function: ease-in-out;
+    }
+    #four{
+        transition-timing-function: linear;
+        transition-delay: 3s;
+       
+    }
+    div:hover{
+        width:300px;
+    }
+    input[type=text]{
+        width:100px;
+        transition :width 3s ease-in-out;
+    }
+    input[type=text]:focus{
+        width:250px;
+    }
+    a{
+        display: block;
+        margin:90px;
+         background-color: red;
+         width:150px;
+         height:80px;
+         padding:15px;
+
+    }
+    a:hover{
+        background-color: green;
+        border-radius: 20px;
+    }
+</style>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+     <label for="sear">Search</label>
+     <input type="text" name="search" id="sear">
+    <a class="transition2">Primathon Academy</a>
+     
+    </body>
+</html>
