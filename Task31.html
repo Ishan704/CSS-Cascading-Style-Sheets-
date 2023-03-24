@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+<style>
+        .one{
+        width:500px;
+        height:100px;
+        background-color:red;
+        position :relative;
+        left:50px;
+        animation :mymove 3s infinite;
+       
+    }
+    .two{
+       position: relative;
+       top:100px;
+        width:100px;
+        height:100px;
+        background-color:yellow;
+       
+    }
+    .three{
+        position: relative;
+       top:150px;
+        width:100px;
+        height:100px;
+        background-color:green;
+    }
+    @keyframes mymove{
+        0% { top:0px;}
+        25%{top :25px;}
+      75%{ top:50px;}
+      100% {top:100px;}
+}
+.two:hover{
+    transform: translate(200px,300px) ;
+}
+.three:hover{
+    transform:rotate(150deg);
+}
+</style>
+</head>
+<body>
+<h1>The @Keyframes Rule</h1>
+<div class="one"></div>
+<div class="two">sec</div>
+<div class="three">sec</div>
+</body>
+</html>
