@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Query</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            background-color: aqua;
+        }
+        p{
+            width:49%;
+            display: inline-block;
+            background-color:greenyellow;
+            text-align: center;
+        }
+        @media (max-width:900px)
+        {
+            p{
+                display: flex;
+                width: 100%;
+                text-align: center;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+   <h1> The column will resize from four columns to two columns</h1>
+    <div>
+        <p>one</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>Four</p>
+    </div>
+</body>
+</html>
